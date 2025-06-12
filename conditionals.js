@@ -22,9 +22,17 @@ englishButton.addEventListener("click", function() {
     //  - The answer should be "Mon".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Correct!" in the ".english-message" div. 
     //  - If incorrect, display "Wrong! Try again."
-    
 
-
+if (englishInput === "mon"||"Mon")
+{
+document.querySelector(".english-message").style.color = "green"
+document.querySelector(".english-message").innerHTML = "Correct!"
+}
+else
+{
+document.querySelector(".english-message").innerHTML ="Wrong! Try again."
+document.querySelector(".english-message").style.color = "red"
+}
 
 });
 
@@ -41,7 +49,19 @@ mathButton.addEventListener("click", function() {
     //  - The answer should be 30.
     //  - If the user enters the correct answer, use .innerHTML to display the word "Yessss!" in the ".math-message" div. 
     //  - If incorrect, display "Wrong! Try again."
-    
+
+if (mathInput === 30)
+{
+
+document.querySelector(".math-message").innerHTML = "Yessss!"
+document.querySelector(".math-message").style.color = "green"
+}
+else
+{
+document.querySelector(".math-message").innerHTML = "Wrong! Try again."
+document.querySelector(".math-message").style.color = "red"
+}
+
 
 });
 
@@ -55,12 +75,22 @@ ssButton.addEventListener("click", function() {
     //  - If the user enters the correct answer, use .innerHTML to display the word "You got it!" in the ".ss-message" div. 
     //  - If incorrect, display "Womp, womp. Try again."
 
-
+if (ssInput === "Albany"||"albany")
+{
+document.querySelector(".ss-message").innerHTML = "You got it!"
+document.querySelector(".ss-message").style.color = "green"
+}
+else
+{
+document.querySelector(".ss-message").innerHTML = "Womp, womp. Try again."
+document.querySelector(".ss-message").style.color = "red"
+}
 
 });
 
 
 scienceButton.addEventListener("click", function() {
+    let scienceInput = document.querySelector(".science").value;
     // 5. Declare a variable that stores the value of the user input in the science section.
     //  - Look at previous lines of code to help you out.
 
@@ -71,8 +101,16 @@ scienceButton.addEventListener("click", function() {
     //  - If the user enters the correct answer, use .innerHTML to display the word "Rockstar!" in the ".science-message" div. 
     //  - If incorrect, display "Sad. Try again."
 
-
-
+if (science=== "solid"||"Solid")
+{
+document.querySelector(".science-message").innerHTML ="Rockstar!"
+document.querySelector(".science-message").style.color = "green"
+}
+else
+{
+document.querySelector("science-message").innerHTML = "Sad. Try again."
+document.querySelector(".science-message").style.color = "red"
+}
 });
 
 // Finish Early?
